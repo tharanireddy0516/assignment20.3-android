@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--A ConstraintLayout is a ViewGroup which allows you to position and size widgets in a flexible way
+layout_width indicates the width of the Constraint layout
+layout_Height indicates the height of the Constraint layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tharani.deletecontact.MainActivity">
+    <!--Taking button for contact id
+    Button is a widget or view
+    width indicates the width of the Button
+      Height indicates the height of the Button
+      layout_constraintBottom_toBottomOf,layout_constraintLeft_toLeftOf
+      layout_constraintRight_toRightOf,layout_constraintTop_toTopOf indicates direction of button-->
+    <Button
+        android:id="@+id/contact_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_contact_by_phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout><!--ConstraintLayout ends here-->
